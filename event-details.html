@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Details | EventPro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">EventPro</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+</header>
+
+<!-- EVENT BANNER -->
+<section class="event-banner">
+    <h1>Tech Conference 2026</h1>
+    <p>📍 Chennai | 📅 Jan 25, 2026</p>
+</section>
+
+<!-- EVENT CONTENT -->
+<section class="event-content">
+
+    <!-- DETAILS -->
+    <div class="event-info">
+        <h2>About Event</h2>
+        <p>
+            Tech Conference 2026 brings together developers, innovators,
+            and industry experts to discuss the latest trends in technology.
+        </p>
+
+        <h2>Agenda</h2>
+        <ul class="timeline">
+            <li>10:00 AM – Opening Keynote</li>
+            <li>11:30 AM – AI & ML Session</li>
+            <li>02:00 PM – Web Development Trends</li>
+            <li>04:00 PM – Networking</li>
+        </ul>
+
+        <h2>Venue</h2>
+        <p>Chennai Trade Centre, Tamil Nadu</p>
+    </div>
+
+    <!-- REGISTRATION FORM -->
+    <div class="register-box">
+        <h2>Register Now</h2>
+
+        <form id="registerForm" onsubmit="return registerEvent()">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email Address">
+            <input type="text" id="phone" placeholder="Phone Number">
+            <button type="submit">Confirm Registration</button>
+        </form>
+    </div>
+
+</section>
+
+<!-- SUCCESS POPUP -->
+<div class="popup" id="successPopup">
+    <div class="popup-content">
+        <h2>🎉 Registration Successful</h2>
+        <p>You have successfully registered for the event.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Smart Event Management System</p>
+</footer>
+
+<script src="./main.js"></script>
+</body>
+</html>

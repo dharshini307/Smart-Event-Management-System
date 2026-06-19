@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events | EventPro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">EventPro</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+</header>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+    <h1>All Events</h1>
+    <p>Find events that match your interest</p>
+</section>
+
+<!-- SEARCH & FILTER -->
+<section class="filters">
+    <input type="text" id="searchInput" placeholder="Search events..." onkeyup="searchEvents()">
+
+    <select id="categoryFilter" onchange="filterEvents()">
+        <option value="all">All Categories</option>
+        <option value="tech">Tech</option>
+        <option value="workshop">Workshop</option>
+        <option value="cultural">Cultural</option>
+    </select>
+</section>
+
+<!-- EVENTS GRID -->
+<section class="events-grid" id="eventsGrid">
+
+    <div class="event-box tech">
+        <h3>Tech Conference 2026</h3>
+        <p>📍 Chennai | 📅 Jan 25</p>
+        <button onclick="goToDetails()">View Details</button>
+    </div>
+
+    <div class="event-box workshop">
+        <h3>Web Development Workshop</h3>
+        <p>📍 Coimbatore | 📅 Feb 10</p>
+        <button onclick="goToDetails()">View Details</button>
+    </div>
+
+    <div class="event-box cultural">
+        <h3>College Cultural Fest</h3>
+        <p>📍 Madurai | 📅 Mar 05</p>
+        <button onclick="goToDetails()">View Details</button>
+    </div>
+
+    <div class="event-box tech">
+        <h3>AI & ML Seminar</h3>
+        <p>📍 Bangalore | 📅 Apr 15</p>
+        <button onclick="goToDetails()">View Details</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Smart Event Management System</p>
+</footer>
+
+<script src="./main.js"></script>
+</body>
+</html>

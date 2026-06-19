@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Event Management</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">EventPro</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Manage Events Smartly & Professionally</h1>
+    <p>Create, manage and attend events with ease</p>
+    <button onclick="goToEvents()">View Events</button>
+</section>
+
+<!-- UPCOMING EVENTS -->
+<section class="events">
+    <h2>Upcoming Events</h2>
+
+    <div class="event-cards">
+        <div class="card">
+            <h3>Tech Conference 2026</h3>
+            <p>📍 Chennai | 📅 Jan 25</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="card">
+            <h3>Web Development Workshop</h3>
+            <p>📍 Coimbatore | 📅 Feb 10</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="card">
+            <h3>Cultural Fest</h3>
+            <p>📍 Madurai | 📅 Mar 05</p>
+            <button>View Details</button>
+        </div>
+    </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown">
+    <h2>Next Big Event Starts In</h2>
+    <div id="timer"></div>
+</section>
+
+<footer>
+    <p>© 2026 Smart Event Management System</p>
+</footer>
+
+<script src="./main.js"></script>
+</body>
+</html>

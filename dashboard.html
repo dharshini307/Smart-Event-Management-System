@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard | EventPro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">EventPro Admin</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+</header>
+
+<!-- DASHBOARD -->
+<section class="dashboard">
+
+    <!-- STATS -->
+    <div class="stats">
+        <div class="stat-card">
+            <h3>Total Events</h3>
+            <p id="totalEvents">3</p>
+        </div>
+        <div class="stat-card">
+            <h3>Registrations</h3>
+            <p>120</p>
+        </div>
+        <div class="stat-card">
+            <h3>Upcoming Events</h3>
+            <p>2</p>
+        </div>
+    </div>
+
+    <!-- ADD EVENT -->
+    <div class="admin-section">
+        <h2>Add New Event</h2>
+        <form id="addEventForm" onsubmit="return addEvent()">
+            <input type="text" id="eventName" placeholder="Event Name">
+            <input type="date" id="eventDate">
+            <input type="text" id="eventLocation" placeholder="Location">
+            <button type="submit">Add Event</button>
+        </form>
+    </div>
+
+    <!-- EVENTS TABLE -->
+    <div class="admin-section">
+        <h2>Manage Events</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="eventTable">
+                <tr>
+                    <td>Tech Conference 2026</td>
+                    <td>Jan 25</td>
+                    <td>Chennai</td>
+                    <td><button onclick="deleteEvent(this)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Smart Event Management System</p>
+</footer>
+
+<script src="./main.js"></script>
+</body>
+</html>
+
