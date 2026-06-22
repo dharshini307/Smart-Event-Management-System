@@ -32,3 +32,8 @@ Smart-Event-Management-System
 ## 👩‍💻 Author
 
 **Dharshini M**
+
+
+## 📸 Project Screenshot
+
+![Homepage](images/homepage.png)
